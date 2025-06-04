@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+:root {
+  --color-bg: #333333;
+  --color-surface: #1e1e1e;
+  --color-primary: #f72585;
+  --color-secondary: #7209b7;
+  --color-accent: #3a0ca3;
+  --color-text: #ffffff;
+  --color-muted: #b0b0b0;
+
+  --font-quicksand: 'Quicksand', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-lobster: 'Lobster', cursive;
+
+  --font-sans: var(--font-quicksand);
+
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+}

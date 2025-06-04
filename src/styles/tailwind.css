@@ -1,0 +1,11 @@
+@import 'tailwindcss/preflight';
+@import 'tailwindcss/utilities';
+
+@import './base.css';
+
+/* Global styles override (opcional) */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
