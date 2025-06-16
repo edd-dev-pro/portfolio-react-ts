@@ -1,7 +1,11 @@
-import { useRoutes } from 'react-router-dom'
-import routes from './routes'
+import { Routes, Route } from 'react-router-dom'
+import { Home, About } from '../pages'
 
 export default function AppRoutes() {
-  const element = useRoutes(routes)
-  return element
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
+  )
 }

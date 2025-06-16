@@ -1,7 +1,7 @@
-import HomeSection from '../sections/home/HomeSection'
 import type { ComponentType } from 'react'
+import { Home, About } from '../pages'
 
-export interface AppRoute {
+interface AppRoute {
   name: string
   key: string
   path: string
@@ -13,16 +13,14 @@ const routes: AppRoute[] = [
     name: 'Inicio',
     key: 'home',
     path: '/',
-    Component: HomeSection,
+    Component: Home,
   },
-  //   {
-  //     path: '/about',
-  //     element: <About />,
-  //   },
-  //   {
-  //     path: '*',
-  //     element: <NotFound />,
-  //   },
+  {
+    name: 'Sobre mí',
+    key: 'about',
+    path: '/about',
+    Component: About,
+  },
 ]
 
 export default routes
