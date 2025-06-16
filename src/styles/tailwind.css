@@ -1,11 +1,30 @@
-@import 'tailwindcss/preflight';
-@import 'tailwindcss/utilities';
-
+@import './fonts.css';
+@import './animation.css';
+@import 'tailwindcss';
 @import './base.css';
 
-/* Global styles override (opcional) */
-body {
-  font-family: var(--font-sans);
-  background-color: var(--color-bg);
-  color: var(--color-text);
+@theme {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+
+  --font-outfit: var(--font-outfit);
+  --font-lobster: var(--font-lobster);
+  --font-sans: var(--font-quicksand);
+  --font-mono: var(--font-mono);
+
+  --shadow-sidebar: var(--shadow-sidebar);
+
+  --animation-blink: var(--animation-blink);
+  --animation-blink-fast: var(--animation-blink-fast);
+  --animation-blink-slow: var(--animation-blink-slow);
+
+  --animation-fade-in: var(--animation-fade-in);
+  --animation-typing: var(--animation-typing);
+
+  --animation-bounce-y: var(--animation-bounce-y);
 }
