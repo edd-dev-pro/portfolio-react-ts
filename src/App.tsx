@@ -1,5 +1,7 @@
+import AppRoutes from './routing/AppRoutes'
+
 function App() {
-  return <div className="text-2xl text-white">My Portfolio</div>
+  return <AppRoutes />
 }
 
 export default App
