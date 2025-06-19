@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section
       id="home"
       data-section="home"
-      className="text-white scroll-section"
+      className="text-white [animation:var(--animation-fade-in)] scroll-section"
     >
       <p className="font-mono text-primary text-sm mb-6 tracking-[.10rem]">
         Hi, my name is
