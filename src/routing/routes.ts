@@ -1,26 +1,14 @@
-import type { ComponentType } from 'react'
-import { Home, About } from '../pages'
-
 interface AppRoute {
   name: string
-  key: string
   path: string
-  Component: ComponentType
 }
 
 const routes: AppRoute[] = [
-  {
-    name: 'Inicio',
-    key: 'home',
-    path: '/',
-    Component: Home,
-  },
-  {
-    name: 'Sobre mí',
-    key: 'about',
-    path: '/about',
-    Component: About,
-  },
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Projects', path: '/projects' },
+  { name: 'Work Experience', path: '/experience' },
+  { name: 'Contact', path: '/contact' },
 ]
 
 export default routes
