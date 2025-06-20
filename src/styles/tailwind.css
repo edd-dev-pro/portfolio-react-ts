@@ -27,4 +27,6 @@
   --animation-typing: var(--animation-typing);
 
   --animation-bounce-y: var(--animation-bounce-y);
+
+  --animation-blob: var(--animation-blob);
 }
