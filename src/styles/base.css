@@ -26,8 +26,6 @@
   --animation-typing: typing 2s steps(20, end) forwards;
 
   --animation-bounce-y: bounce-y 4s ease-in-out infinite;
-
-  --animation-blob: blob 20s infinite ease-in-out;
 }
 
 body {
@@ -35,13 +33,4 @@ body {
   background-color: var(--color-bg);
   box-sizing: border-box;
   color: var(--color-text);
-}
-
-.animate-blob {
-  animation: var(--animation-blob);
-  pointer-events: none;
-}
-
-.animation-delay-2000 {
-  animation-delay: 2s;
 }
