@@ -13,7 +13,12 @@ const LavaBlobs = () => {
     }
   }, [])
 
-  return <canvas id="liq-blob"></canvas>
+  return (
+    <canvas
+      id="liq-blob"
+      className="lg:ps-[7rem] ps-0 w-screen h-screen"
+    ></canvas>
+  )
 }
 
 export default LavaBlobs
