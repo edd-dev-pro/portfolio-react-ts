@@ -1,0 +1,5 @@
+export { default as HeroSection } from './heroSection/HeroSection'
+export { default as AboutMeSection } from './aboutMeSection/AboutMeSection'
+export { default as MyProjectsSection } from './myProjectsSection/MyProjectsSection'
+export { default as MyExperienceSection } from './myExperienceSection/MyExperienceSection'
+export { default as ContactMeSection } from './contactMeSection/ContactMeSection'

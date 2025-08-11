@@ -1,0 +1,8 @@
+canvas#liq-blob {
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  position: fixed;
+  pointer-events: none;
+}
