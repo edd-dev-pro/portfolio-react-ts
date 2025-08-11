@@ -14,16 +14,15 @@ const HeroSection = () => {
         Eduardo Martinez
       </h1>
       <h2 className="text-5xl font-semibold mb-6 tracking-[.10rem]">
-        <span>I&apos;m passionate about JavaScript</span>
+        <span>I&apos;m passionate about Development</span>
       </h2>
       <p className="font-extralight text-base/relaxed tracking-[.10rem] max-w-xl">
-        I&apos;m a software engineer specializing in building (and occasionally
-        design) exceptional digital experiences. Currently, I&apos;m focused on
-        building accessible, human-centered products at{' '}
-        <span className="font-mono text-primary text-sm">
-          Upstatement
-          <BlinkingCursor />
-        </span>
+        I love building{' '}
+        <span className="font-mono text-primary text-sm">digital tools</span>{' '}
+        and creating fast, easy-to-maintain experiences using good practices,
+        modular design, and testing. I{' '}
+        <span className="font-mono text-primary text-sm">keep learning </span>{' '}
+        modern tools and technologies <BlinkingCursor speed="slow" />
       </p>
     </section>
   )

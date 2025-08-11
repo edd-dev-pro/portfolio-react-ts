@@ -16,6 +16,11 @@ const AboutMeSection = () => {
         JavaScript, TypeScript, and modern frameworks to deliver high-quality
         user experiences.
       </p>
+      <img
+        src="/public/assets/imgs/under-construction-transparent.png"
+        alt="under-construction"
+        className="m-auto w-1/2"
+      />
     </section>
   )
 }

@@ -9,6 +9,11 @@ const MyExperienceSection = () => {
         My Experience
       </h1>
       <p>Here you can find a list of my experience.</p>
+      <img
+        src="/public/assets/imgs/under-construction-transparent.png"
+        alt="under-construction"
+        className="m-auto w-1/2"
+      />
     </div>
   )
 }
