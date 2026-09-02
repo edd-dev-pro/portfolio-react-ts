@@ -1,20 +1,33 @@
+import { RiArrowRightSFill } from 'react-icons/ri'
+import { BlinkingCursor } from '../../components'
+
 const MyExperienceSection = () => {
   return (
-    <div
+    <section
       id="experience"
       data-section="experience"
       className="text-white [animation:var(--animation-fade-in)] scroll-section"
     >
-      <h1 className="text-4xl font-semibold mb-4 tracking-[.10rem]">
-        My Experience
-      </h1>
-      <p>Here you can find a list of my experience.</p>
-      <img
-        src="/public/assets/imgs/under-construction-transparent.png"
-        alt="under-construction"
-        className="m-auto w-1/2"
-      />
-    </div>
+      <div className="flex flex-col lg:flex-row items-center justify-center h-full my-10">
+        <div className="pr-0 lg:pr-5 pb-10 lg:pb-0">
+          <h1 className="text-4xl font-semibold mb-12 tracking-[.10rem] flex">
+            <RiArrowRightSFill className="text-primary" /> My Experience
+          </h1>
+          <p className="text-base font-light tracking-[.10rem] max-w-xl pl-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            pulvinar risus et pulvinar cursus. Phasellus eget mi quis massa
+            eleifend sollicitudin. <BlinkingCursor speed="slow" />
+          </p>
+        </div>
+        <div className="relative inline-block pr-4 pb-4">
+          <img
+            src="/assets/imgs/under-construction-transparent.png"
+            alt="under-construction"
+            className="m-auto w-1/2"
+          />
+        </div>
+      </div>
+    </section>
   )
 }
 

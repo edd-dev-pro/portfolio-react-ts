@@ -1,3 +1,6 @@
 export { default as SocialLink } from './socialLink/SocialLink'
 export { default as BlinkingCursor } from './blinkingCursor/BlinkingCursor'
 export { default as LavaBlobs } from './lavaBlobs/LavaBlobs'
+export { default as ProjectCard } from './projectCard/ProjectCard'
+export { default as Badge } from './badge/Badge'
+export { default as OutlineButton } from './outlineButton/OutlineButton'

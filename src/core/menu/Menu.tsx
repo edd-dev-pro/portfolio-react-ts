@@ -16,8 +16,7 @@ const Menu = () => {
   }
 
   return (
-    <div className="absolute top-6 right-6 z-50">
-      {/* Botón hamburguesa */}
+    <div id="menu" className="absolute top-6 right-6 z-50">
       <button
         type="button"
         aria-label="Toggle menu"
@@ -25,7 +24,6 @@ const Menu = () => {
         onClick={() => setOpen((prev) => !prev)}
         className="group relative w-12 h-10 flex flex-col justify-center gap-[6px] cursor-pointer z-50"
       >
-        {/* Línea 1 */}
         <span
           className={classNames(
             'block h-[6px] w-1/2 bg-white rounded-full transition-all duration-300 origin-center',
@@ -34,14 +32,12 @@ const Menu = () => {
               : 'w-1/2 self-start group-hover:w-full',
           )}
         />
-        {/* Línea 2 */}
         <span
           className={classNames(
             'block h-[6px] w-full bg-white rounded-full transition-all duration-300 origin-center',
             open ? 'opacity-0' : 'group-hover:w-full',
           )}
         />
-        {/* Línea 3 */}
         <span
           className={classNames(
             'block h-[6px] w-1/2 bg-white rounded-full transition-all duration-300 origin-center',
@@ -51,8 +47,6 @@ const Menu = () => {
           )}
         />
       </button>
-
-      {/* Overlay */}
       <div
         className={classNames(
           'absolute top-1/2 right-1/2 w-[100px] h-[100px] rounded-full transition-transform duration-500 ease-out -translate-y-1/2 translate-x-1/2',
@@ -64,7 +58,6 @@ const Menu = () => {
           zIndex: -1,
         }}
       />
-      {/* Navegación */}
       {open && (
         <nav className="fixed inset-0 flex flex-col items-center justify-center text-center">
           <ul className="space-y-6">
