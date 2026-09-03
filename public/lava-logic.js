@@ -237,6 +237,8 @@ window.lavaAnimation = (function () {
 if (document.getElementById('liq-blob')) {
   lavaAnimation.run()
 }
-setTimeout(function () {
-  $('.js-works-d-list').addClass('is-loaded')
+setTimeout(() => {
+  document.querySelectorAll('.js-works-d-list').forEach((element) => {
+    element.classList.add('is-loaded')
+  })
 }, 150)
