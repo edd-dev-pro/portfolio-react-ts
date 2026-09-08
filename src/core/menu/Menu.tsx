@@ -16,7 +16,7 @@ const Menu = () => {
   }
 
   return (
-    <div id="menu" className="absolute top-6 right-6 z-50">
+    <div id="menu" className="absolute top-6 right-6 z-[99999]">
       <button
         type="button"
         aria-label="Toggle menu"
