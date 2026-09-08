@@ -20,13 +20,13 @@ const Sidebar = () => {
       <div className="flex flex-col items-center gap-4 mt-6 text-lg">
         <SocialLink href="https://github.com/edd-dev-pro" icon={<FaGithub />} />
         <SocialLink
-          href="https://www.facebook.com/eddanddev"
-          icon={<FaFacebookSquare />}
+          href="https://www.linkedin.com/in/edd-dev"
+          icon={<FaLinkedin />}
         />
         <SocialLink href="https://x.com/edd__dev" icon={<FaXTwitter />} />
         <SocialLink
-          href="https://www.linkedin.com/in/edd-dev"
-          icon={<FaLinkedin />}
+          href="https://www.facebook.com/eddanddev"
+          icon={<FaFacebookSquare />}
         />
       </div>
     </aside>
