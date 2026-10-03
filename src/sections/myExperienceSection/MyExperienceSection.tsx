@@ -18,7 +18,7 @@ const MyExperienceSection = () => {
       className="text-white [animation:var(--animation-fade-in)] scroll-section"
     >
       <div className="flex flex-col lg:flex-row items-center justify-center h-full my-10">
-        <div className="pr-0 lg:pr-5 pb-10 lg:pb-0">
+        <div className="pr-0 w-full lg:w-auto lg:pr-5 pb-10 lg:pb-0">
           <h1 className="text-4xl font-semibold mb-12 tracking-[.10rem] flex">
             <RiArrowRightSFill className="text-primary" /> My Experience
           </h1>
