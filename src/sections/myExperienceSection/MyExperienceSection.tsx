@@ -1,7 +1,16 @@
+import { useState } from 'react'
 import { RiArrowRightSFill } from 'react-icons/ri'
-import { BlinkingCursor } from '../../components'
+import { ExperienceCard } from '../../components'
+import { EXPERIENCES, LABELS } from './constants'
+import classNames from 'classnames'
 
 const MyExperienceSection = () => {
+  const [company, setCompany] = useState<string>('ids-comercial-1')
+
+  const selectedExperience = EXPERIENCES.find(
+    (experience) => experience.id === company,
+  )
+
   return (
     <section
       id="experience"
@@ -13,18 +22,35 @@ const MyExperienceSection = () => {
           <h1 className="text-4xl font-semibold mb-12 tracking-[.10rem] flex">
             <RiArrowRightSFill className="text-primary" /> My Experience
           </h1>
-          <p className="text-base font-light tracking-[.10rem] max-w-xl pl-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            pulvinar risus et pulvinar cursus. Phasellus eget mi quis massa
-            eleifend sollicitudin. <BlinkingCursor speed="slow" />
-          </p>
+          <div className="pl-10">
+            {LABELS.map((label) => (
+              <button
+                key={label.id}
+                type="button"
+                aria-pressed={company === label.id}
+                className={classNames(
+                  'cursor-pointer w-full text-left block hover:bg-neutral-700 hover:text-primary hover:border-l-4 hover:border-primary text-muted rounded-r-sm font-mono p-3',
+                  {
+                    'bg-neutral-700 text-primary border-l-4 border-primary':
+                      company === label.id,
+                  },
+                )}
+                onClick={() => setCompany(label.id)}
+              >
+                {label.label}
+              </button>
+            ))}
+          </div>
         </div>
-        <div className="relative inline-block pr-4 pb-4">
-          <img
-            src="/assets/imgs/under-construction-transparent.png"
-            alt="under-construction"
-            className="m-auto w-1/2"
-          />
+        <div className="relative inline-block">
+          {selectedExperience && (
+            <ExperienceCard
+              title={selectedExperience.title}
+              company={selectedExperience.company}
+              period={selectedExperience.period}
+              bullets={selectedExperience.bullets}
+            />
+          )}
         </div>
       </div>
     </section>
