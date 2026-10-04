@@ -5,9 +5,10 @@ import { Badge, OutlineButton } from '../../components'
 interface ProjectCardProps {
   title: string
   technologies: string[]
+  url: string
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ title, technologies }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ title, technologies, url }) => {
   return (
     <div className="col-span-4 aspect-square flex flex-col justify-between p-5 bg-neutral-800 rounded-sm shadow-lg hover:shadow-xl">
       <div className="inline-flex w-fit p-3 text-2xl text-primary bg-neutral-700 rounded-full">
@@ -27,7 +28,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, technologies }) => {
         </div>
       </div>
       <div className="mt-5 border-t border-neutral-700 pt-5">
-        <OutlineButton text="View Project" href="#" />
+        <OutlineButton text="View Project" href={url} />
       </div>
     </div>
   )
