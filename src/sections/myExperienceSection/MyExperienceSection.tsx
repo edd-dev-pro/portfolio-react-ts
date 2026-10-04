@@ -19,7 +19,7 @@ const MyExperienceSection = () => {
     >
       <div className="flex flex-col lg:flex-row items-center justify-center h-full my-10">
         <div className="pr-0 w-full lg:w-auto lg:pr-5 pb-10 lg:pb-0">
-          <h1 className="text-4xl font-semibold mb-12 tracking-[.10rem] flex">
+          <h1 className="text-4xl font-semibold mt-15 lg:mt-0 mb-12 tracking-[.10rem] flex">
             <RiArrowRightSFill className="text-primary" /> My Experience
           </h1>
           <div className="pl-10">

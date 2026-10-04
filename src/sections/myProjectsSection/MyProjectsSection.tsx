@@ -26,32 +26,33 @@ const MyProjectsSection = () => {
         <div className="relative w-full inline-block pr-0 pb-0">
           <div className="grid w-full m-auto max-w-5xl grid-cols-4 gap-5 md:grid-cols-8 lg:grid-cols-12">
             <ProjectCard
-              title="Project Title 1"
-              technologies={[
-                'React.js',
-                'TypeScript',
-                'Node.js',
-                'TailwindCSS',
-              ]}
+              title="IUSARREND"
+              url="https://iusarrend.com/inicio"
+              technologies={['React.js', 'TypeScript', 'Node.js', 'Bootstrap']}
             />
             <ProjectCard
               title="Project Title 2"
+              url="#"
               technologies={['Angular', 'TypeScript', 'Node.js']}
             />
             <ProjectCard
               title="Project Title 3"
+              url="#"
               technologies={['React.js', 'JavaScript', 'Bootstrap']}
             />
             <ProjectCard
               title="Project Title 4"
+              url="#"
               technologies={['Express.js', 'SQL', 'MongoDB']}
             />
             <ProjectCard
               title="Project Title 5"
+              url="#"
               technologies={['Java', 'SQL', 'Spring Boot']}
             />
             <ProjectCard
               title="Project Title 6"
+              url="#"
               technologies={['Next.js', 'TypeScript', 'Node.js', 'MongoDB']}
             />
           </div>
