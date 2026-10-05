@@ -35,6 +35,8 @@ export const EXPERIENCES = [
       'Developed compound components with React.js, distributing responsibilities across reusable subcomponents to improve code readability and maintainability.',
       'Managed application state using Redux and Context API, creating custom contexts and hooks to share and manipulate data across different views.',
       'Developed workflows for policy lookup and configuration, integrating the EVO Payments SDK for tokenized Visa and Mastercard card registration using sessions and tokens.',
+      'Implemented backend functionality with Java 21 and Spring Boot, working across controllers, services, repositories, DTOs, and entities with Spring Data/JPA and Maven, including business logic and validation for payment and settlement workflows.',
+      'Migrated a legacy Python 2.7 application to Python 3.9, using Antigravity CLI for AI-assisted code analysis and migration validation, while updating deprecated syntax, standard libraries, authentication dependencies, and container runtime to preserve existing application behavior.',
     ],
   },
   {

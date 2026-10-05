@@ -26,7 +26,7 @@ const MyProjectsSection = () => {
         <div className="relative w-full inline-block pr-0 pb-0">
           <div className="grid w-full m-auto max-w-5xl grid-cols-4 gap-5 md:grid-cols-8 lg:grid-cols-12">
             <ProjectCard
-              title="IUSARREND"
+              title="IUSARREND Website"
               url="https://iusarrend.com/inicio"
               technologies={['React.js', 'TypeScript', 'Node.js', 'Bootstrap']}
             />
